@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMR - Digital Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">SMR</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-img">
+                <img src="pic.jpg" style="border-radius: 50%;height: inherit;"  alt="photo" />
+            </div>
+            <h1>Reddy Mourya Sampth Kumar</h1>
+            <p>Aspiring VLSI Engineer</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-eye"></i> View My Work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>About Me</h2>
+                <!-- <p>Passionate developer with a love for creating innovative digital solutions</p> -->
+            </div>
+            <div class="about-content fade-in">
+                <div class="about-info">
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <span><strong>Name:</strong>Reddy Mourya Sampth Kumar</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span><strong>Age:</strong> 19</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span><strong>Location:</strong>India</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span><strong>Phone:</strong>+91 6301481749</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Personal Statement</h3>
+                    <p>I am a highly motivated and enthusiastic Electronics and Communication Engineering (ECE) undergraduate currently pursuing my B.Tech from IIIT Sricity, with a strong foundation in digital and analog electronics, embedded systems, and object-oriented programming. My academic journey has equipped me with solid technical skills in C, C++, and embedded system design, along with hands-on experience developing innovative projects such as a Smart Car Parking System and Smart Irrigation System.</p>
+                    
+                    <p> As an active Co-Lead of the Photography Club (F/Stops), I have developed strong leadership and team collaboration skills, along with creative problem-solving abilities. With a deep interest in semiconductor technologies and digital circuit design, I aspire to build a career as a VLSI Engineer, contributing to the development of cutting-edge integrated circuits and systems. I am eager to leverage my technical expertise and passion for electronics towards solving real-world challenges in the semiconductor industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Skills & Technologies</h2>
+                <p>A comprehensive overview of my technical expertise and capabilities</p>
+            </div>
+            <!-- <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <div class="skill-item">
+                        <span>HTML5 & CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript (ES6+)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Vue.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skill-item">
+                        <span>Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>PHP</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Express.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 83%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-database"></i> Database & Tools</h3>
+                    <div class="skill-item">
+                        <span>MongoDB</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>MySQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Git & GitHub</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Docker</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 72%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="skills-grid">
+                <div class="skill-category" style="padding: 10px;">
+                    <h3 style="justify-content: center;">C</h3>
+                </div>
+                <div class="skill-category" style="padding: 10px;">
+                    <h3 style="justify-content: center;">CPP</h3>
+                </div><div class="skill-category" style="padding: 10px;">
+                    <h3 style="justify-content: center;">OOPS</h3>
+                </div><div class="skill-category" style="padding: 10px;">
+                    <h3 style="justify-content: center;">VLSI</h3>
+                </div><div class="skill-category" style="padding: 10px;">
+                    <h3 style="justify-content: center;">EMBEDDED SYSTEMS</h3>
+                </div>
+                <div class="skill-category" style="padding: 10px;">
+                    <h3 style="justify-content: center;">DSA</h3>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Education</h2>
+                <p>My academic journey and continuous learning path</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>BTech ECE</h3>
+                        <div class="timeline-date">2023 - 2027</div>
+                        <h4>IIIT Sricity</h4>
+                        <p>Currently Pursuing Electronic And Communication Engineering</p>
+                    </div>
+                </div>
+                <!-- <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Bachelor of Computer Engineering</h3>
+                        <div class="timeline-date">2014 - 2018</div>
+                        <h4>UC Berkeley</h4>
+                        <p>Strong foundation in computer science fundamentals, algorithms, and data structures. Active member of the Programming Club and Tech Entrepreneurship Society.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Full Stack Web Development Bootcamp</h3>
+                        <div class="timeline-date">2017</div>
+                        <h4>General Assembly</h4>
+                        <p>Intensive 12-week program covering modern web development technologies including MEAN stack, version control, and agile development methodologies.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <!-- <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Work Experience</h2>
+                <p>Professional journey and key accomplishments</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Senior Full Stack Developer</h3>
+                        <div class="timeline-date">2022 - Present</div>
+                        <h4>TechCorp Inc.</h4>
+                        <p>Leading development of scalable web applications serving 100K+ users. Implemented microservices architecture reducing system response time by 40%. Mentoring junior developers and conducting code reviews.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <div class="timeline-date">2020 - 2022</div>
+                        <h4>InnovateLab</h4>
+                        <p>Developed and maintained multiple client projects using React, Node.js, and MongoDB. Collaborated with design teams to create responsive, user-friendly interfaces. Implemented CI/CD pipelines improving deployment efficiency by 60%.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Junior Web Developer</h3>
+                        <div class="timeline-date">2018 - 2020</div>
+                        <h4>StartupXYZ</h4>
+                        <p>Built responsive websites and web applications from concept to deployment. Worked closely with clients to understand requirements and deliver solutions that exceeded expectations. Gained experience in agile development practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Featured Projects</h2>
+                <p>Showcase of my recent work and technical achievements</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Car Parking System</h3>
+                        <p>An intelligent parking management solution using IoT sensors and microcontrollers. The system automatically detects available parking spots, displays real-time occupancy status, and provides mobile app integration for users to find and reserve parking spaces.</p>
+                        <div class="project-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">IoT Sensors</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Mobile App</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
+                            <!-- <a href="#"><i class="fab fa-github"></i> Source Code</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Irrigation System</h3>
+                        <p>Automated irrigation system using soil moisture sensors, weather data integration, and intelligent water management. The system optimizes water usage, monitors plant health, and provides remote monitoring capabilities for efficient farming.</p>
+                        <div class="project-tags">
+                            <span class="tag">Embedded C</span>
+                            <span class="tag">Soil Sensors</span>
+                            <span class="tag">Arduino</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
+                            <!-- <a href="#"><i class="fab fa-github"></i> Source Code</a> -->
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="awards">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Awards & Achievements</h2>
+                <p>Recognition for excellence in development and innovation</p>
+            </div>
+            <div class="awards-grid">
+                <div class="award-card fade-in">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Co Lead - F/Stops</h3>
+                    <p>Photography Club - IIITS</p>
+                    <span class="award-year">2025-2026</span>
+                    <p>Best Co-lead ever in F/Stops.</p>
+                </div>
+
+                <!-- <div class="award-card fade-in">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Best Innovation Award</h3>
+                    <p>Hackathon SF 2022</p>
+                    <span class="award-year">2022</span>
+                    <p>First place winner for developing an AI-powered accessibility tool that helps visually impaired users navigate web content more effectively.</p>
+                </div>
+
+                <div class="award-card fade-in">
+                    <div class="award-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Outstanding Graduate</h3>
+                    <p>Stanford University</p>
+                    <span class="award-year">2020</span>
+                    <p>Magna Cum Laude graduate with highest honors in Computer Science program. Thesis on "Machine Learning in Web Development" received departmental recognition.</p>
+                </div>
+
+                <div class="award-card fade-in">
+                    <div class="award-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>AWS Certified Solutions Architect</h3>
+                    <p>Amazon Web Services</p>
+                    <span class="award-year">2021</span>
+                    <p>Professional certification demonstrating expertise in designing and deploying scalable systems on AWS cloud infrastructure.</p>
+                </div>
+
+                <div class="award-card fade-in">
+                    <div class="award-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Impact Award</h3>
+                    <p>Code for Good Initiative</p>
+                    <span class="award-year">2021</span>
+                    <p>Recognition for volunteer work developing pro-bono websites for local non-profit organizations, contributing over 200 hours of development time.</p>
+                </div>
+
+                <div class="award-card fade-in">
+                    <div class="award-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>Open Source Contributor</h3>
+                    <p>GitHub</p>
+                    <span class="award-year">2020-Present</span>
+                    <p>Active contributor to popular open-source projects with over 500 commits and contributions to React, Vue.js, and Node.js ecosystems.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Extracurricular & Volunteering -->
+    <section class="extracurricular">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Extracurricular & Volunteering</h2>
+                <p>Community involvement and personal interests</p>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card fade-in">
+                    <div class="activity-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Code Mentor</h3>
+                    <p>Volunteer coding instructor at local community college, teaching web development fundamentals to underprivileged youth. Helped over 50 students launch their tech careers.</p>
+                </div>
+
+                <div class="activity-card fade-in">
+                    <div class="activity-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Tech Speaker</h3>
+                    <p>Regular speaker at tech conferences and meetups, sharing insights on modern web development practices, accessibility, and career development in tech.</p>
+                </div>
+
+                <div class="activity-card fade-in">
+                    <div class="activity-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Outdoor Enthusiast</h3>
+                    <p>Passionate hiker and photographer, exploring California's national parks. Lead weekend hiking groups and organize team-building outdoor activities for colleagues.</p>
+                </div>
+
+                <div class="activity-card fade-in">
+                    <div class="activity-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Tech Blog Writer</h3>
+                    <p>Regular contributor to Medium and Dev.to, writing tutorials and articles about web development best practices. Articles have reached over 10,000 developers worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <!-- <section class="resume">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Resume & References</h2>
+                <p>Download my complete resume and professional references</p>
+            </div>
+            <div class="resume-content fade-in">
+                <div class="resume-download">
+                    <div class="resume-preview">
+                        <i class="fas fa-file-pdf"></i>
+                        <h3>Complete Resume</h3>
+                        <p>Download my comprehensive resume with detailed work history, skills, and achievements.</p>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="references">
+                    <h3>Professional References</h3>
+                    <div class="reference-grid">
+                        <div class="reference-card">
+                            <h4>Sarah Mitchell</h4>
+                            <p><strong>Senior Project Manager</strong></p>
+                            <p>TechCorp Inc.</p>
+                            <p><i class="fas fa-phone"></i> +1 (555) 987-6543</p>
+                            <p><i class="fas fa-envelope"></i> s.mitchell@techcorp.com</p>
+                        </div>
+
+                        <div class="reference-card">
+                            <h4>Dr. James Wilson</h4>
+                            <p><strong>Professor of Computer Science</strong></p>
+                            <p>Stanford University</p>
+                            <p><i class="fas fa-phone"></i> +1 (555) 654-3210</p>
+                            <p><i class="fas fa-envelope"></i> jwilson@stanford.edu</p>
+                        </div>
+
+                        <div class="reference-card">
+                            <h4>Maria Rodriguez</h4>
+                            <p><strong>Lead Developer</strong></p>
+                            <p>InnovateLab</p>
+                            <p><i class="fas fa-phone"></i> +1 (555) 456-7890</p>
+                            <p><i class="fas fa-envelope"></i> m.rodriguez@innovatelab.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 style="color: white;">Get In Touch</h2>
+                <p>Let's discuss your next project or opportunity</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>IIIT Sri City, Chittoor</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 6301481749</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>sampathmourya200517@gmail.com</span>
+                    </div>
+                </div>
+
+                <!-- <form class="contact-form fade-in">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- <p>&copy; 2025 Alex Johnson. All rights reserved. Built with passion and modern web technologies.</p> -->
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>
